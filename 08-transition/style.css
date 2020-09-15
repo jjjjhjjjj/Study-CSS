@@ -1,0 +1,23 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+
+
+.line-button {
+  padding: 18px 32px;
+  position: relative;
+}
+
+.line-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 3s ease-in;
+}
+
+.line-button:hover::after {
+  width: 100%;
+}
+
